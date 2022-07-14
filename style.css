@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body,
+html {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+.master-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+#adidas-logo {
+    margin: 15px auto;
+}
+
+#girl-image-mobile {
+    height: 250px;
+    width: 100%;
+    background: center/cover url("https://assets.codepen.io/6060109/mobile-shoes.jpg");
+}
+
+.all-content-container {
+    padding: 20px 8px;
+}
+
+#main-content {
+    text-align: center;
+    width: 100%;
+}
+
+h2,
+p {
+    margin: 0;
+    font-family: 'AdiHaus';
+}
+
+h2 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h2.were-text-header {
+    color: #2F80ED;
+    font-weight: 400;
+    margin: 10px;
+}
+
+h2.coming-soon-text-header {
+    color: #423A3A font-weight: 700;
+}
+
+p {
+    line-height: 28px;
+    margin: 20px 0 40px;
+    color: #333333;
+}
+
+.email-form {
+    display: flex;
+}
+
+input {
+    height: 50px;
+}
+
+input[type="email"] {
+    width: 80%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 0;
+    background: rgb(124, 124, 124);
+    background: linear-gradient(90deg, rgba(124, 124, 124, 1) 0%, rgba(43, 40, 40, 1) 100%);
+    font-family: AdiHaus;
+    font-weight: 400;
+    color: #D8D8D8;
+    font-size: 30px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.desktop-image {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: url("https://assets.codepen.io/6060109/waves.png");
+        background-size: cover;
+    }
+
+    .master-container {
+        width: 50%;
+    }
+
+    #main-content {
+        text-align: left;
+    }
+
+    #girl-image-mobile {
+        display: none;
+    }
+
+    #adidas-logo {
+        margin: 30px 8px 100px;
+    }
+
+    .desktop-image {
+        display: block;
+        width: 50%;
+        background: url("https://assets.codepen.io/6060109/shoes.png");
+        background-size: cover;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+}
